@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheets"href="stles.css">
+    <style>
+        * {
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: bisque;
+        }
+        
+        form {
+            padding: 30px;
+            background-color: rgb(226, 210, 190);
+            border: 3px ridge rgb(82, 82, 233);
+            border-radius: 15px ;
+        }
+        h2 {
+            font-size: 25px;
+            background-color: rgb(226, 210, 190);
+            text-decoration: underline;
+        }
+        input, select, textarea {
+            margin: 8px 0px;
+            background-color: rgb(226, 210, 190);
+            color: rgb(40, 76, 43);
+            width: 100%;
+            padding: 10px;
+        }
+        label {
+            font-weight: bold;
+        }
+        .main-cont {
+            margin: auto;
+            width: 80%;
+        }
+        button {
+            border: none;
+            color: rgb(0, 17, 255);
+            font-weight: 700;
+            text-decoration: underline;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="myNav"></nav>
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about_us.html">ABOUT US</a></li>
+        <li><a href="our_services.html">OUR SERVICES</a></li>
+        <li><a href="contact_us.html">CONTACT US</a></li>
+    </ul>
+    <div class="main-cont">
+        <form action="">
+    <h2><center>Youth Reseach Survey Form.</h2></center>
+    <form>
+<label for="name">Enter Your Full Name</label>
+    <input type="text" id="" name="" placeholder="Name" required><br>
+<label for="Gender">Gender</label>
+<select id="Gender" name="Gender">
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    </select><br>
+<label for="phone">Phone Number</label>
+  <input type="tel" id="phone" name="phone" placeholder="Phone Number (ex: (000) 000-0000)" required>
+       <br>
+<label for="Age">Age</label><br>
+<select id="Age" name="Age">
+    <option value="<=20"><=20</option>
+    <option value="21-30">21-30</option>
+    <option value="31-40">31-40</option>
+    </select>
+ <br>
+<label for="Archedeconary">Archedeconary</label>
+    <select id="Archedeconary" name="Archedeconary">
+     <option value="Kilindini">Kilindini</option>
+     <option value="Shanzu">Shanzu</option>
+     <option value="Kisauni">Kisauni</option>
+     <option value="Changamwe">Changamwe</option>
+     <option value="Mariakani">Mariakani</option>
+     <option value="Matuga">Matuga</option>
+    <option value="Ukunda">Ukunda</option>
+    <option value="Gimba">Gimba</option>
+    <option value="Shimbahills">Shimbahills</option>
+            </select>
+    <br>
+<label for="Parish">Parish</label>
+<input type="text" id="" Parish="" placeholder="Enter the Name of your Parish" required><br>
+<label for="Position in the Youth Ministry">Which Area do you Serve in the Youth Ministry</label>
+<input type="text" id="" Position="" placeholder="Enter your position" required><br>
+<label for="Challanges you Face as a Youth">Challanges you face as a Youth</label>
+<input type="text" id="" challanges="" placeholder="Enter atleast five Challanges you face" required><br>
+    <input type="submit" value="Submit">
+</form>
+</div>
+    </body>
+</html>
